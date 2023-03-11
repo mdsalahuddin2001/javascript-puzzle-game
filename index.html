@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js"></script>
+  </head>
+  <body onload="main()">
+    <!-- <img
+      id="scream"
+      width="220"
+      height="277"
+      src="https://img.freepik.com/free-vector/gradient-mountain-landscape_52683-77407.jpg"
+      alt="The Scream"
+    /> -->
+    <canvas id="myCanvas"></canvas>
+    <div id="menuItems">
+      <div id="menu">
+        <div id="controls">
+          Difficulty
+          <select name="difficulty" id="difficulty" onchange="setDifficulty()">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+            <option value="insane">Insane</option>
+          </select>
+          <br />
+          <br />
+          <button onclick="restart()">Start</button>
+        </div>
+      </div>
+    </div>
+    <p id="time"></p>
+  </body>
+</html>
