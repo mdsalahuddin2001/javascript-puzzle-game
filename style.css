@@ -1,30 +1,69 @@
 body {
   margin: 0;
-  padding: 0;
   overflow: hidden;
   overscroll-behavior: none;
+  font-family: Arial;
+  color: #444;
 }
-#menuItems {
+option {
+  color: #444;
+}
+.menu {
+  width: 80vmin;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: rgba(255, 255, 255, 0.6);
-  padding: 10px;
-  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.8);
   text-align: center;
-  border: 2px solid #999;
+  padding: 5vmin;
+  border: 5px solid #dd1361;
+  font-size: 7vmin;
 }
+
 button {
-  padding: 8px 20px;
+  font-size: 1.8rem;
+  background: #dd1361;
   color: white;
-  background-color: #ec008c;
-  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
   border: none;
+  border-radius: 6px;
+  padding: 8px 20px;
 }
+
+button:disabled {
+  background: lightgray;
+  color: gray;
+  cursor: default;
+}
+
+select {
+  font-size: 7vmin;
+  cursor: pointer;
+  border: none;
+  border-radius: 1vmin;
+  outline: none;
+}
+
 #time {
   position: absolute;
+  top: 0;
   left: 50%;
-  top: 20px;
-  transform: translateX(-50%);
+  transform: translate(-50%);
+}
+
+#scoresContainer {
+  height: 43vh;
+  overflow: auto;
+}
+#scoreValue {
+  color: #dd1361;
+}
+
+input {
+  font-size: 7vmin;
+  border-radius: 1vmin;
+  width: 50%;
+  text-align: center;
 }

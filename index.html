@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Puzzle Game</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="./app.js"></script>
+    <script src="./test.js"></script>
   </head>
   <body onload="main()">
     <!-- <img
@@ -17,11 +17,16 @@
       alt="The Scream"
     /> -->
     <canvas id="myCanvas"></canvas>
-    <div id="menuItems">
+
+    <canvas id="helperCanvas" style="display: none"></canvas>
+    <div id="menuItems" class="menu">
       <div id="menu">
         <div id="controls">
+          <img src="title.png" style="width: 90%" />
+          <br />
+          <br />
           Difficulty
-          <select name="difficulty" id="difficulty" onchange="setDifficulty()">
+          <select id="difficulty" onchange="setDifficulty()">
             <option value="easy">Easy</option>
             <option value="medium">Medium</option>
             <option value="hard">Hard</option>
@@ -33,6 +38,15 @@
         </div>
       </div>
     </div>
-    <p id="time"></p>
+
+    <div id="endScreen" class="menu" style="display: none">
+      <div id="scoreValue"></div>
+    </div>
+    <div id="scoresScreen" class="menu" style="display: none">
+      <div id="scoresContainer"></div>
+      <br />
+    </div>
+
+    <div id="time"></div>
   </body>
 </html>
