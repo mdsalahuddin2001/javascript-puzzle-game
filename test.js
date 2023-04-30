@@ -18,15 +18,17 @@ let START_TIME = null;
 let END_TIME = null;
 let POP_SOUND = new Audio("pop.mp3");
 POP_SOUND.volume = 0.2;
-
+IMAGE = document.createElement("img");
+IMAGE.src = "./images/logo-javascript.svg";
 function main() {
   CANVAS = document.getElementById("myCanvas");
   CONTEXT = CANVAS.getContext("2d");
   addEventListeners();
   CANVAS.width = window.innerWidth;
   CANVAS.height = window.innerHeight;
-  IMAGE = document.createElement("img");
-  IMAGE.src = "./images/logo-javascript.svg";
+
+  // IMAGE = document.createElement("img");
+  // IMAGE.src = "./images/logo-javascript.svg";
 
   handleResize();
   initializePieces(SIZE.rows, SIZE.columns);
