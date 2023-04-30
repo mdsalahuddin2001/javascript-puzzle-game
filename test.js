@@ -26,7 +26,7 @@ function main() {
   CANVAS.width = window.innerWidth;
   CANVAS.height = window.innerHeight;
   IMAGE = document.createElement("img");
-  IMAGE.src = "./images/p1.jpg";
+  IMAGE.src = "./images/logo-javascript.svg";
 
   handleResize();
   initializePieces(SIZE.rows, SIZE.columns);
